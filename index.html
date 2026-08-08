@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horizons Voyages – Agence de voyage sur mesure</title>
+    
+    <!-- Google Fonts (typographie soignée) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet" />
+    
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    
+    <!-- Vos fichiers CSS et JS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ========== EN-TÊTE / NAVIGATION ========== -->
+    <header class="header" role="banner">
+        <div class="container header__inner">
+            <div class="logo">
+                <i class="fas fa-plane-departure logo__icon"></i>
+                <span class="logo__text">Horizons</span>
+            </div>
+
+            <!-- Menu de navigation principal -->
+            <nav class="nav" role="navigation" aria-label="Navigation principale">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#accueil" class="nav__link">Accueil</a></li>
+                    <li class="nav__item"><a href="#a-propos" class="nav__link">À propos</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#temoignages" class="nav__link">Témoignages</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Bouton du menu burger (mobile) -->
+            <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- ========== SECTION ACCUEIL (HERO) ========== -->
+        <section id="accueil" class="hero">
+            <div class="container hero__inner">
+                <div class="hero__content">
+                    <h1 class="hero__title">Explorez le monde autrement</h1>
+                    <p class="hero__subtitle">
+                        Des voyages sur mesure, conçus avec passion pour révéler l’authenticité de chaque destination.
+                    </p>
+                    <a href="#services" class="btn btn--primary">Découvrir nos offres</a>
+                </div>
+                <div class="hero__illustration">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=400&fit=crop&crop=center&auto=format" alt="Voyageur admirant un coucher de soleil sur la plage" loading="lazy" />
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SECTION À PROPOS ========== -->
+        <section id="a-propos" class="about">
+            <div class="container">
+                <h2 class="section-title">À propos de nous</h2>
+                <div class="about__grid">
+                    <div class="about__text">
+                        <p>
+                            <strong>Horizons Voyages</strong> est une agence indépendante née d’une passion commune pour les voyages authentiques. 
+                            Nous croyons que chaque périple doit être unique, en phase avec vos envies et votre rythme.
+                        </p>
+                        <p>
+                            Que vous rêviez d’une évasion en pleine nature, d’une immersion culturelle ou d’un séjour balnéaire, 
+                            notre équipe d’experts sélectionne avec soin chaque hébergement, activité et transport pour vous offrir 
+                            une expérience sans faille.
+                        </p>
+                        <p>
+                            <i class="fas fa-check-circle about__icon"></i> 100 % sur mesure<br />
+                            <i class="fas fa-check-circle about__icon"></i> Accompagnement 24h/24<br />
+                            <i class="fas fa-check-circle about__icon"></i> Engagement écoresponsable
+                        </p>
+                    </div>
+                    <div class="about__image">
+                        <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?w=600&h=400&fit=crop&crop=center&auto=format" alt="Équipe d'Horizons Voyages" loading="lazy" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SECTION SERVICES ========== -->
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section-title">Nos services</h2>
+                <div class="services__grid">
+                    <article class="service-card">
+                        <div class="service-card__icon">
+                            <i class="fas fa-route"></i>
+                        </div>
+                        <h3 class="service-card__title">Circuits personnalisés</h3>
+                        <p class="service-card__desc">
+                            Des itinéraires sur mesure, adaptés à vos centres d’intérêt et à votre budget.
+                        </p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-card__icon">
+                            <i class="fas fa-hotel"></i>
+                        </div>
+                        <h3 class="service-card__title">Hébergements d’exception</h3>
+                        <p class="service-card__desc">
+                            Hôtels de charme, lodges insolites ou villas privées : le gîte parfait pour vos nuits.
+                        </p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-card__icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h3 class="service-card__title">Activités & excursions</h3>
+                        <p class="service-card__desc">
+                            Visites guidées, randonnées, ateliers locaux… Vivez des moments inoubliables.
+                        </p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-card__icon">
+                            <i class="fas fa-concierge-bell"></i>
+                        </div>
+                        <h3 class="service-card__title">Assistance 24/7</h3>
+                        <p class="service-card__desc">
+                            Une hotline dédiée pour vous accompagner avant, pendant et après votre voyage.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SECTION TÉMOIGNAGES ========== -->
+        <section id="temoignages" class="testimonials">
+            <div class="container">
+                <h2 class="section-title">Ils nous ont fait confiance</h2>
+                <div class="testimonials__grid">
+                    <blockquote class="testimonial-card">
+                        <p class="testimonial-card__text">
+                            « Grâce à Horizons, notre voyage en Nouvelle-Zélande a été un rêve éveillé. 
+                            Chaque détail était parfait, du vol aux hébergements. Merci ! »
+                        </p>
+                        <footer class="testimonial-card__footer">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Photo de Claire D." class="testimonial-card__avatar" loading="lazy" />
+                            <cite class="testimonial-card__author">Claire D.</cite>
+                            <span class="testimonial-card__role">Voyageuse</span>
+                        </footer>
+                    </blockquote>
+                    <blockquote class="testimonial-card">
+                        <p class="testimonial-card__text">
+                            « Une équipe à l’écoute et des conseils avisés. Notre séjour au Costa Rica 
+                            était tout simplement magique. Je recommande les yeux fermés. »
+                        </p>
+                        <footer class="testimonial-card__footer">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Photo de Marc L." class="testimonial-card__avatar" loading="lazy" />
+                            <cite class="testimonial-card__author">Marc L.</cite>
+                            <span class="testimonial-card__role">Voyageur</span>
+                        </footer>
+                    </blockquote>
+                    <blockquote class="testimonial-card">
+                        <p class="testimonial-card__text">
+                            « Professionnalisme, réactivité et bienveillance. Horizons a su transformer 
+                            notre lune de miel en une aventure inoubliable. »
+                        </p>
+                        <footer class="testimonial-card__footer">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Photo de Sophie et Thomas" class="testimonial-card__avatar" loading="lazy" />
+                            <cite class="testimonial-card__author">Sophie &amp; Thomas</cite>
+                            <span class="testimonial-card__role">Mariés</span>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SECTION CONTACT ========== -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Contactez-nous</h2>
+                <div class="contact__inner">
+                    <form class="contact__form" id="contactForm">
+                        <div class="form__group">
+                            <label for="name" class="form__label">Nom complet</label>
+                            <input type="text" id="name" name="name" class="form__input" placeholder="Votre nom" required />
+                        </div>
+                        <div class="form__group">
+                            <label for="email" class="form__label">Adresse email</label>
+                            <input type="email" id="email" name="email" class="form__input" placeholder="exemple@email.com" required />
+                        </div>
+                        <div class="form__group">
+                            <label for="message" class="form__label">Votre message</label>
+                            <textarea id="message" name="message" class="form__textarea" rows="5" placeholder="Dites-nous tout..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">Envoyer</button>
+                        <p class="form__feedback" id="formFeedback"></p>
+                    </form>
+                    <div class="contact__infos">
+                        <h3>Nos coordonnées</h3>
+                        <p><i class="fas fa-map-pin"></i> 12 rue des Voyages, 75001 Paris</p>
+                        <p><i class="fas fa-phone-alt"></i> +33 1 23 45 67 89</p>
+                        <p><i class="fas fa-envelope"></i> contact@horizons-voyages.fr</p>
+                        <div class="contact__socials">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== PIED DE PAGE ========== -->
+    <footer class="footer" role="contentinfo">
+        <div class="container footer__inner">
+            <p>&copy; 2026 Horizons Voyages – Tous droits réservés.</p>
+            <p class="footer__credits">Conçu avec <i class="fas fa-heart"></i> par notre équipe.</p>
+        </div>
+    </footer>
+
+    <!-- ========== SCRIPTS ========== -->
+    <script src="script.js"></script>
+</body>
+</html>
